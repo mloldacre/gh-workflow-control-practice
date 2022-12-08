@@ -79,7 +79,7 @@ jobs:
     if: failure()
     runs-on: ubuntu-latest
     steps:
-      - names: Output Information
+      - name: Output Information
         run: |
           echo "Craps whack son"
           echo "${{ github }}"
