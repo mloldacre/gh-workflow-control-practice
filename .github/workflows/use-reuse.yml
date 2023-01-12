@@ -68,7 +68,8 @@ jobs:
           path: dist
   deploy:
     needs: build
-    uses: ././github/workflows/reusable.yml    
+    uses: ././github/workflows/reusable.yml
+  report:
     needs: [lint, deploy] #will look at all jobs when set from  first to last
     if: failure()
     runs-on: ubuntu-latest
