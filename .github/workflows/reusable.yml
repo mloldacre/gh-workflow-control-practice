@@ -8,11 +8,10 @@ on:
         required: false
         default: dist
         type: string
-      outputs:
-        result:
-          description: The result of the deployment operation
-          type: string
-          value: ${{ jobs.deploy.outputs.outcome}}
+     outputs:
+       result:
+         description: The result of the deployment operation
+         value: ${{ jobs.deploy.outputs.outcome}}
     #secrets:
     #some-secret: (should be indented)
     #required: true (should be indented 2x)
