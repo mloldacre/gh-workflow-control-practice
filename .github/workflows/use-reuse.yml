@@ -71,6 +71,8 @@ jobs:
     uses: ./.github/workflows/reusable.yml
     with:
       artifact-name: dist-files
+    #secrets:
+    #some-secret: ${{ secrets.some-secret}}
   report:
     needs: [lint, deploy] #will look at all jobs when set from  first to last
     if: failure()
