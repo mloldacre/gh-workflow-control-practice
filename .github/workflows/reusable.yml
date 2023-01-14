@@ -11,6 +11,7 @@ on:
       outputs:
         result:
           description: The result of the deployment operation
+          type: string
           value: ${{ jobs.deploy.outputs.outcome}}
     #secrets:
     #some-secret: (should be indented)
